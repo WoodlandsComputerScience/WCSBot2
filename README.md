@@ -1,5 +1,8 @@
 # WCSBot2
+![](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=wcs.wcsbot2.visitors&color=232323&style=for-the-badge&logo=Github)
+
 <!-- Add badges to show the status of the bot -->
+
 ## What is this?
 
 This is a bot made to replace `WCSBot` which is currently deprecated. The bot utilizes powerful web technologies such as **Node.js** to write a Discord bot such as `WCSBot2`. Made by [Nathan](https://github.com/Nathan13888) and [Max](https://github.com/jcoptre).
