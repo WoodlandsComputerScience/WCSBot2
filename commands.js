@@ -32,6 +32,10 @@ function init() {
     registerCommand('suggest')
     registerCommand('join')
     registerCommand('leave')
+    registerCommand('roles') // lists out roles
+    registerCommand('ping') // pong
+    registerCommand('uptime')
+    registerCommand('dm') // make it flexible to dm users? could be annoying though
     console.log(commandMap)
     console.log(helpMap)
 }
