@@ -8,13 +8,12 @@ class SuggestCommand extends Command {
     }
 
     async exec(msg, args) {
-        if (args.length == 0) {
-            msg.reply('USAGE: `submit <group - A|B|AB> <suggestion here>`')
-        } else if (args.length >= 2) {// you must have at least two 'args'
+        if (args.length >= 2) {// you must have at least two 'args'
             const group = args.shift().toUpperCase()
-            if (!(group == 'A' || group == 'B' || group == 'AB')){
+            if (!(group == 'A' || group == 'B' || group == 'AB')) {
                 msg.reply('INVALID GROUP')
-                return false}
+                return false
+            }
             const suggestion = args.join(' ')
 
             const res = this.sendSuggestion(group, suggestion, msg)
@@ -35,8 +34,10 @@ class SuggestCommand extends Command {
             // Prompt for Message
             // Show the suggested embed and prompt for confirmation (defaults to true)
             // Send embed to #topic-suggestions but to #bot-logs if not available
-        } else
+        } else {
+            msg.reply('USAGE: `submit <group - A|B|AB> <suggestion here>`')
             return false;
+        }
         return true;
     }
 
