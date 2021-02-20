@@ -1,11 +1,15 @@
 {
   "name": "wscbot2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A new bot for the WCS server",
   "main": "bot.js",
   "scripts": {
     "start": "node .",
     "dev": "nodemon .",
+    "docker:build": "docker build -t wcsbot2 .",
+    "docker:run": "docker run -d --name wcsb wcsbot2:latest",
+    "docker:kill": "docker kill wcsb",
+    "docker": "npm run docker:build && npm run docker:run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
